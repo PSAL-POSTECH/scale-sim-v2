@@ -144,8 +144,8 @@ class single_layer_sim:
             if self.config.use_user_dram_bandwidth():
                 bws = self.config.get_bandwidths_as_list()
                 ifmap_backing_bw = bws[0]
-                filter_backing_bw = bws[0]
-                ofmap_backing_bw = bws[0]
+                filter_backing_bw = bws[1]
+                ofmap_backing_bw = bws[2]
 
             else:
                 dataflow = self.config.get_dataflow()
